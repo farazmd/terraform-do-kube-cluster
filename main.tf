@@ -1,3 +1,4 @@
+# see https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/resources/kubernetes_cluster
 resource "digitalocean_kubernetes_cluster" "cluster" {
     name            = var.cluster_name
     auto_upgrade    = var.is_auto_upgrade

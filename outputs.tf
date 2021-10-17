@@ -1,3 +1,4 @@
+# see https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/resources/kubernetes_cluster#kube_config.0
 output "cluster_endpoint" {
     value = digitalocean_kubernetes_cluster.cluster.kube_config.0.host
 }
