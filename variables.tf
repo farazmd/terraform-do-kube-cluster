@@ -33,3 +33,17 @@ variable "worker_count" {
     description = "Number of workers"
     default     = 1 
 }
+
+variable "min_nodes" {
+    description = "Minimum nodes for scalable workers"
+    default     = 1
+}
+
+variable "max_nodes" {
+    description = "Maximum nodes for scalable workers"
+    default = 3
+}
+variable "is_auto_scale" {
+    description = "Are scalable workers required ?"
+    default = false
+}
